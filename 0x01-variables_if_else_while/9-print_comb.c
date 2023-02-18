@@ -1,22 +1,26 @@
 #include <stdio.h>
-
 /**
- * main - prints all numbers in bae 16 in lowercas
- * followed by a new line
+ * main - is entry of program
  *
- * Return: Always 0
+ * Return: 0, if succesful
  */
 int main(void)
 {
-	int n;
+	/*
+	 * prints all single integers, with comma and space after
+	 * loops through 0-9, prints them,prints comma,print space,
+	 * use only putchar
+	 */
+	int x;
 
-	for (n = 0 ; n < 10 ; n++)
+	for (x = 0 ; x < 10 ; x++)
 	{
-		putchar((n % 10) + '0');
-		if (n == 9)
+		putchar((x % 10) + '0');
+		if (x == 9)
+		/*continue printing comma and space except if x == 9*/
 			continue;
 		putchar(',');
-		putchar('');
+		putchar(' ');
 	}
 	putchar('\n');
 	return (0);
