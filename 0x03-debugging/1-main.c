@@ -1,5 +1,3 @@
-es (19 sloc)  247 Bytes
-
 /**
  * main - causes an infinite loop
  * Return: 0
