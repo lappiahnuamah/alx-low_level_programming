@@ -11,5 +11,6 @@ void reset_to_98(int *n)
 {
 	int *ip;
 	ip = &n;
+	ip = 98;
 	printf("n = %d\n", *ip);
 }
